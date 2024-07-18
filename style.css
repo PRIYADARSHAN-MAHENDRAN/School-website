@@ -1,0 +1,22 @@
+*{
+margin: 0;
+padding: 0;
+}
+.header{
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.navigation{
+    font-size: 30px;
+    padding: 10px;
+    background-color: #864b95;    
+}
+li{
+    display: inline;
+    color: white;
+    padding-left: 10px;
+}
+li:hover{
+    color: #f09e2a;
+}
