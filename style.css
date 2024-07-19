@@ -48,7 +48,7 @@ body {
     width: 100%;
     overflow: hidden;
     position: relative;
-    margin: 80px 0 20px; /* Adjust the top margin to create space for the fixed navbar */
+    margin: 80px 0 0px; /* Adjust the top margin to create space for the fixed navbar */
     height: 500px; /* Adjust the height as needed */
 }
 
@@ -85,4 +85,12 @@ body {
     margin-left: 50px;
     display: inline-block;
     width: 220px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+.evebox {
+    margin: 30px;
+    margin-left: 50px;
+    display: inline-block;
+    width: 320px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
 }
