@@ -1,7 +1,7 @@
 // script.js
 
 // Smooth scrolling for navigation links
-document.querySelectorAll('nav a').forEach(anchor => {
+document.querySelectorAll('.navigation a').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
 
@@ -9,10 +9,14 @@ document.querySelectorAll('nav a').forEach(anchor => {
         const targetElement = document.getElementById(targetId);
 
         if (targetElement) {
-            targetElement.scrollIntoView({ behavior: 'smooth' });
+            window.scrollTo({
+                top: targetElement.offsetTop - document.querySelector('.navigation').offsetHeight, // Adjust this value as needed
+                behavior: 'smooth'
+            });
         }
     });
 });
+
 
 // Image carousel
 document.addEventListener('DOMContentLoaded', function () {
@@ -28,5 +32,5 @@ document.addEventListener('DOMContentLoaded', function () {
         slides.style.transform = translateX(${-index * 100}%);
     }
 
-    setInterval(slide, 5000); // Change slide every 5 seconds
+    setInterval(slide, 7000); // Change slide every 7 seconds
 });

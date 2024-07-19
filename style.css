@@ -8,8 +8,9 @@ html {
 }
 
 .section {
-    padding: 15px ;
-    min-height: 100vh; /* Optional: Adjust height as needed */
+    padding-top: 50px ;
+    margin-top: 0px;
+    min-height: vh; /* Optional: Adjust height as needed */
 }
 
 body {
@@ -17,15 +18,15 @@ body {
 }
 
 .header {
-    margin-top: 105px;
+    margin-top: 0px;
     align-items: center;
     text-align: center;
     padding-left: 20px;
-    padding-top: 20px;
+    padding-top: 0px;
 }
 
 .navigation {
-    font-size: 25px;
+    font-size: 23px;
     padding: 13px;
     background-color: #864b95;
     position: fixed;
@@ -36,15 +37,25 @@ body {
     display: flex;
     justify-content: flex-end;
 }
+.navigation a {
+    text-decoration: none;
+    color: white; /* Ensures the text is visible */
+}
+
+.navigation a:hover {
+    color: #f09e2a;
+}
 
 .navigation ul {
     display: flex;
     list-style: none;
+    
 }
 
 .navigation li {
     color: white;
     padding: 0 6px;
+    
 }
 
 .navigation li:hover {
@@ -55,7 +66,7 @@ body {
     width: 100%;
     overflow: hidden;
     position: relative;
-    margin: 80px 0 0px; /* Adjust the top margin to create space for the fixed navbar */
+    margin:  px 0px; /* Adjust the top margin to create space for the fixed navbar */
     height: 500px; /* Adjust the height as needed */
 }
 
@@ -124,7 +135,7 @@ body {
     text-align: center;
     padding: 20px;
     background-color: #4077bc;
-    margin: 30px;
+    margin:0px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
