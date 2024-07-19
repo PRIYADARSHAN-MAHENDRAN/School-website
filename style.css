@@ -8,7 +8,6 @@ body {
     font-family: Arial, sans-serif;
 }
 
-
 .header {
     margin-top: 105px;
     align-items: center;
@@ -80,17 +79,36 @@ body {
         transform: translateX(0%);
     }
 }
-.box{
+
+.box {
     margin: 30px;
-    margin-left: 50px;
-    display: inline-block;
     width: 220px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
 }
+
 .evebox {
     margin: 30px;
-    margin-left: 50px;
-    display: inline-block;
     width: 320px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+
+
+.event-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.list-container {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
 }
