@@ -3,14 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 html {
     scroll-behavior: smooth;
 }
 
 .section {
-    padding-top: 50px ;
+    padding-top: 50px;
     margin-top: 0px;
-    min-height: vh; /* Optional: Adjust height as needed */
+    min-height: vh;
+    /* Optional: Adjust height as needed */
 }
 
 body {
@@ -25,6 +27,7 @@ body {
     padding-top: 0px;
 }
 
+/* Navigation Bar Styles */
 .navigation {
     font-size: 23px;
     padding: 13px;
@@ -35,65 +38,99 @@ body {
     left: 0;
     z-index: 1000;
     display: flex;
-    justify-content: flex-end;
-}
-.navigation a {
-    text-decoration: none;
-    color: white; /* Ensures the text is visible */
-}
-
-.navigation a:hover {
-    color: #f09e2a;
+    justify-content: flex-end; /* Align items to the right */
+    white-space: nowrap; /* Prevent text from wrapping */
+    box-sizing: border-box;
 }
 
 .navigation ul {
     display: flex;
     list-style: none;
-    
+    margin: 0;
+    padding: 0;
 }
 
 .navigation li {
     color: white;
-    padding: 0 6px;
-    
+    padding: 0 10px; /* Adjusted padding to ensure items fit in one line */
+    white-space: nowrap; /* Prevent list items from wrapping */
 }
 
 .navigation li:hover {
     color: #f09e2a;
 }
 
+.navigation a {
+    text-decoration: none;
+    color: white;
+    background-color: #4fcbb2;
+    border-style: solid;
+    padding: 5px 10px; /* Adjusted padding for links */
+    display: inline-block;
+}
+
+.navigation a:hover {
+    color: #f09e2a;
+}
+
+/* Responsive Navigation Bar */
+@media (max-width: 768px) {
+    .navigation {
+        flex-direction: row;
+        align-items: flex-end;
+    }
+
+    .navigation ul {
+        flex-direction: column;
+    }
+
+    .navigation li {
+        padding: 10px 0;
+    }
+}
+
+
 .slider {
     width: 100%;
     overflow: hidden;
     position: relative;
-    margin:  px 0px; /* Adjust the top margin to create space for the fixed navbar */
-    height: 500px; /* Adjust the height as needed */
+    margin: px 0px;
+    /* Adjust the top margin to create space for the fixed navbar */
+    height: 500px;
+    /* Adjust the height as needed */
 }
 
 .slides {
     display: flex;
     width: 300%;
-    height: 100%; /* Make slides take up the full height of the slider */
+    height: 100%;
+    /* Make slides take up the full height of the slider */
     animation: slide 15s infinite;
 }
 
 .slides img {
     width: 33.3333%;
-    height: 100%; /* Make images take up the full height of the slides */
-    object-fit: cover; /* Ensure images cover the slider area */
-    object-position: center; /* Center the images */
+    height: 100%;
+    /* Make images take up the full height of the slides */
+    object-fit: cover;
+    /* Ensure images cover the slider area */
+    object-position: center;
+    /* Center the images */
 }
 
 @keyframes slide {
     0% {
         transform: translateX(0%);
     }
+
     33.3333% {
         transform: translateX(-33.3333%);
     }
+
     66.6666% {
         transform: translateX(-66.6666%);
     }
+
     100% {
         transform: translateX(0%);
     }
@@ -122,7 +159,7 @@ body {
 .list-container {
     display: flex;
     justify-content: center;
-    
+
 }
 
 .list {
@@ -130,13 +167,14 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     text-align: center;
-    
+
 }
+
 .contact-us {
     text-align: center;
     padding: 20px;
     background-color: #4077bc;
-    margin:0px;
+    margin: 0px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }

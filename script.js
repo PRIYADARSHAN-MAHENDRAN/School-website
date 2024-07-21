@@ -2,7 +2,7 @@
 
 // Smooth scrolling for navigation links
 document.querySelectorAll('.navigation a').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
+    anchor.addEventListener('click', function (e) {
         e.preventDefault();
 
         const targetId = this.getAttribute('href').substring(1);
@@ -29,8 +29,8 @@ document.addEventListener('DOMContentLoaded', function () {
         if (index === images.length) {
             index = 0;
         }
-        slides.style.transform = translateX(${-index * 100}%);
+        slides.style.transform = translateX(${- index * 100}%);
     }
 
-    setInterval(slide, 7000); // Change slide every 7 seconds
+setInterval(slide, 7000); // Change slide every 7 seconds
 });
